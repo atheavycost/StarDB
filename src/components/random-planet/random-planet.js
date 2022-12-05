@@ -22,7 +22,7 @@ export default class RandomPlanet extends Component {
     
     updatePlanet() {
         this.SwapiService
-            .getPlanet(3)
+            .getPlanet(7)
             .then((planet) => {
                 this.setState({
                     name: planet.name,

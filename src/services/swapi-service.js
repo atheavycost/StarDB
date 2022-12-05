@@ -42,5 +42,5 @@ export default class SwapiService {
 
 }
 
-const swapi = new SwapiService();
+// const swapi = new SwapiService();
 

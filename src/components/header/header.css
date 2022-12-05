@@ -1,4 +1,5 @@
-.header ul li.header {
+.header ul li:hover
+.header {
     margin-top: .5rem;
     padding-left: 10px;
 }

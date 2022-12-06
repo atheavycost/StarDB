@@ -9,19 +9,43 @@ import './app.css';
 
 export default class App extends Component {
 
+    state ={
+        showRandomPlanet: true,
+        selectedPerson: null
+    };
+
+    toggleRandomPlanet = () => {
+
+    };
+
+    onPersonSelected = (id) => {
+        this.setState({
+            selectedPerson: id
+        });
+    };
+
     render() {
 
+        const planet = this.state.showRandomPlanet ? <RandomPlanet/> : null;
+
     return (
-        <div>
+        <div className='stardb-app'>
             <Header />
-            <RandomPlanet />
+            {planet}
+
+            <button className='toggle-planet btn btn-warning btn-lg'
+                    onClick={this.toggleRandomPlanet}> 
+                    BUMP a random planet!
+            </button>
+
+            {/* <RandomPlanet /> */}
 
             <div className='row mb2'>
                 <div className='col-md-6'>
-                    <ItemList />
+                    <ItemList onItemSelected={this.onPersonSelected}/>
                 </div>
                 <div className='col-md-6'>
-                    <PersonDetails />
+                    <PersonDetails personId={this.state.selectedPerson}/>
                 </div>
             </div>
         </div>

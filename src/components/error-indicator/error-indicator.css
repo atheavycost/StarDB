@@ -1,0 +1,13 @@
+.error-indicator  {
+    color: rgb(255, 255, 255);
+}
+
+.boom {
+    background-color: blueviolet;
+}
+
+.image-size {
+    width: 150px;
+    height: 150px;
+
+}

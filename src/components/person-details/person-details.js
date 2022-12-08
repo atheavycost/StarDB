@@ -8,7 +8,7 @@ export default class PersonDetails extends Component {
     swapiService = new SwapiService();
 
     state = {
-        person: null
+        person: 11
     };
 
     componentDidMount() {
@@ -23,9 +23,9 @@ export default class PersonDetails extends Component {
     };
 
     updatePerson() {
-        const {personId} = this.state;
+        const {personId} = this.props;
         if (!personId) {
-            return;
+            return ;
         }
 
         this.swapiService
@@ -49,7 +49,7 @@ export default class PersonDetails extends Component {
                     src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`} 
                     alt='caracter'/>
                     <div className='card-body'>
-                        My name is: {name}
+                        My name is: {name} 
                         <div>with id = {id}</div>
                         <div>Gender: {gender}</div>
                         <div>mass: {mass}</div>

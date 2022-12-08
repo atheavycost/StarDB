@@ -2,37 +2,37 @@ import React, {Component} from 'react';
 
 import './spinner.css';
 
-// export default class Spinner extends Component {
+export default class Spinner extends Component {
 
-//     render() {
+    render() {
 
-//         return (
-//             <div class="loadingio-spinner-double-ring-dgaxvw3r7i">
-//                 <div class="ldio-kn4ogwu5kfi">
+        return (
+            <div className="loadingio-spinner-double-ring-dgaxvw3r7i">
+                <div className="ldio-kn4ogwu5kfi">
             
-//                  <style type="text/css">
+                 {/* <style type="text/css">
 
-//                  </style>
+                 </style> */}
 
-//                 </div>
-//             </div>
-//         );
-//     };
-// };
-
-let Spinner = function() {
-    return (
-                    <div class="loadingio-spinner-double-ring-dgaxvw3r7i">
-                        <div class="ldio-kn4ogwu5kfi">
-                    
-                         {/* <style type="text/css">
-        
-                         </style> */}
-        
-                        </div>
-                    </div>
-    )
-
+                </div>
+            </div>
+        );
+    };
 };
 
-export default Spinner;
+// let Spinner = function() {
+//     return (
+//                     <div className="loadingio-spinner-double-ring-dgaxvw3r7i">
+//                         <div className="ldio-kn4ogwu5kfi">
+                    
+//                          {/* <style type="text/css">
+        
+//                          </style> */}
+        
+//                         </div>
+//                     </div>
+//     )
+
+// };
+
+// export default Spinner;

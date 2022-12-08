@@ -8,7 +8,7 @@ import './random-planet.css';
 
 export default class RandomPlanet extends Component {
 
-    SwapiService = new SwapiService();
+    swapiService = new SwapiService();
 
     state = {
         planet: {},
@@ -43,7 +43,7 @@ export default class RandomPlanet extends Component {
         console.log('update');
         const id = Math.floor(Math.random() * 30) + 3;
         // const id = 13333;
-        this.SwapiService
+        this.swapiService
             .getPlanet(id)
             .then(this.onPlanetLoaded)
             .catch(this.onError);
@@ -64,7 +64,9 @@ export default class RandomPlanet extends Component {
         return (
             <div className='random-planet jumbotron rounded'>
                 {errorMessage}
-                {spinner}
+ 
+                    {spinner}
+
                 {content}
             </div>
         );

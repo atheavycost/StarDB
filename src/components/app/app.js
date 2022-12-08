@@ -24,6 +24,10 @@ export default class App extends Component {
         });
     };
 
+    componentDidCatch() {
+        console.log('componentDidCatch()');
+    };
+
     render() {
 
         const planet = this.state.showRandomPlanet ? <RandomPlanet/> : null;
@@ -38,16 +42,19 @@ export default class App extends Component {
                     BUMP a random planet!
             </button>
 
-            {/* <RandomPlanet /> */}
-
             <div className='row mb2'>
                 <div className='col-md-6'>
                     <ItemList onItemSelected={this.onPersonSelected}/>
                 </div>
+
                 <div className='col-md-6'>
                     <PersonDetails personId={this.state.selectedPerson}/>
-                </div>
+                
             </div>
+            
+        </div>
+
+    
         </div>
     );
 };

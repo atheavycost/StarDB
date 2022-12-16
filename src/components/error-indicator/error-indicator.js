@@ -13,7 +13,7 @@ const ErrorIndicator = () => {
             <span className='boom'>BOOM!</span>
             <span>something has gone terribly wrong</span>
             <span>
-                (but we have sent droinds to fix it, already)
+                (but we have sent droids to fix it, already)
             </span>
         </div>
     );
